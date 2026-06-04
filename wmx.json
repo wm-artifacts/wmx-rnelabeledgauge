@@ -1,0 +1,149 @@
+{
+  "name": "RNELabeledGauge",
+  "version": "1.0.0-dev.12",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wavemaker/wm-react-native-echarts"
+  },
+  "homepage": "https://wavemaker.github.io/wm-react-native-echarts/?path=/story/charts-gauge-simple--default",
+  "displayName": "Labeled Gauge",
+  "description": "Gauge chart with custom title and detail text labels for metric display",
+  "iconUrl": "icon.svg",
+  "component": "labeled-gauge.chart.tsx",
+  "requires": [
+    "../../chart-container.tsx",
+    "../../chart-theme.context.tsx"
+  ],
+  "dependencies" : {
+    "@wavemaker/react-native-echarts" : "1.0.0-dev.12",
+    "@shopify/react-native-skia" : "2.6.2"
+  },
+  "keywords": [
+    "gauge",
+    "chart",
+    "labeled",
+    "title",
+    "text",
+    "custom",
+    "visualization",
+    "annotated",
+    "metric",
+    "chart/gauge"
+  ],
+  "props": {
+    "value": {
+      "name": "value",
+      "displayName": "Value",
+      "description": "Current value to display. Example: 75",
+      "type": "number",
+      "isList": false,
+      "isRequired": true
+    },
+    "min": {
+      "name": "min",
+      "displayName": "Min",
+      "description": "Minimum value of the gauge scale. Example: 0",
+      "type": "number",
+      "isList": false,
+      "defaultValue": 0,
+      "isRequired": false
+    },
+    "max": {
+      "name": "max",
+      "displayName": "Max",
+      "description": "Maximum value of the gauge scale. Example: 100",
+      "type": "number",
+      "isList": false,
+      "defaultValue": 100,
+      "isRequired": false
+    },
+    "width": {
+      "name": "width",
+      "displayName": "Width",
+      "description": "Width of the chart in pixels. Example: 220",
+      "type": "number",
+      "isList": false,
+      "defaultValue": 220,
+      "isRequired": false
+    },
+    "height": {
+      "name": "height",
+      "displayName": "Height",
+      "description": "Height of the chart in pixels. Example: 350",
+      "type": "number",
+      "isList": false,
+      "defaultValue": 240,
+      "isRequired": false
+    },
+    "theme": {
+      "name": "theme",
+      "displayName": "Theme",
+      "description": "Partial theme override for customizing chart appearance. Example: {series: [{color: '#3b82f6'}]}",
+      "type": "object",
+      "isList": false,
+      "isRequired": false
+    },
+    "colors": {
+      "name": "colors",
+      "displayName": "Colors",
+      "description": "Colors for the chart. Example: ['#3b82f6', '#10b981', '#f59e0b']",
+      "type": "string",
+      "isList": true,
+      "isRequired": false
+    },
+    "axisBgColor": {
+      "name": "axisBgColor",
+      "displayName": "Axis Background Color",
+      "description": "Background color for the unfilled portion of the gauge axis arc.",
+      "type": "string",
+      "isList": false,
+      "isRequired": false
+    },
+    "axisWidth": {
+      "name": "axisWidth",
+      "displayName": "Axis Width",
+      "description": "Thickness of the gauge axis arc line in pixels. Default: 50",
+      "type": "number",
+      "isList": false,
+      "defaultValue": 50,
+      "isRequired": false
+    },
+    "tickColor": {
+      "name": "tickColor",
+      "displayName": "Tick Color",
+      "description": "Color override for title and detail label text (tick label color from theme when omitted).",
+      "type": "string",
+      "isList": false,
+      "isRequired": false
+    },
+    "title": {
+      "name": "title",
+      "displayName": "Title",
+      "description": "Title label shown on the gauge (series name). Default: 'Metric'",
+      "type": "string",
+      "isList": false,
+      "defaultValue": "Metric",
+      "isRequired": false
+    },
+    "detailText": {
+      "name": "detailText",
+      "displayName": "Detail Text",
+      "description": "Formatted detail string below the value (e.g. percentage or unit). Default: '30%'",
+      "type": "string",
+      "isList": false,
+      "defaultValue": "30%",
+      "isRequired": false
+    }
+  },
+  "group": "chart/gauge",
+  "marketplace": {
+    "carouselImages": [
+      "/assets/images/simple.png"
+    ],
+    "thumbnailImage": "/assets/images/thumbnail.png",
+    "icon": "icon.svg",
+    "previewUrl": "https://wavemaker.github.io/wm-react-native-echarts/?path=/story/charts-gauge-simple--default"
+  },
+  "webSupport": true
+}
